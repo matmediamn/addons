@@ -12,17 +12,17 @@ arch:
   - amd64
   - i386
 hassio_api: true
-init: false
+init: true
 image: homeassistant/{arch}-addon-duckdns
 map:
   - ssl:rw
 options:
   domains:
-    - null
-  token: null
+    - matmediaha.duckdns.org
+  token: 1f97049f-7470-4782-b629-70a38fd79376
   aliases: []
   lets_encrypt:
-    accept_terms: false
+    accept_terms: true
     algo: secp384r1
     certfile: fullchain.pem
     keyfile: privkey.pem
